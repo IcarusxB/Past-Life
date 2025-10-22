@@ -1,0 +1,18 @@
+[package]
+name = "Past-Life"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.42"
+solana-client              = "2.0"
+solana-commitment-config   = "2.2"
+solana-pubkey              = "2.4"
+solana-rpc-client-api      = "2.3"
+solana-signature           = "2.3"
+solana-transaction-status = "2.3"
+
+[patch.crates-io]
+asn1-rs-impl = { path = "patches/asn1-rs-impl" }
+solana-packet = { path = "patches/solana-packet" }
+solana-rpc-client = { path = "patches/solana-rpc-client" }
